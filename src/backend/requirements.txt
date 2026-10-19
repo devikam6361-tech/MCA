@@ -5,3 +5,4 @@ sqlalchemy
 python-multipart
 pydantic
 email-validator
+numpy
