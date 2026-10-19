@@ -7,3 +7,4 @@ pydantic
 email-validator
 numpy
 opencv-python-headless
+deepface
