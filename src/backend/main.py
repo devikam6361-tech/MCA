@@ -34,7 +34,8 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# Allow requests from the React development server.
+
+# Allow requests from the React development server and deployed frontend.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -50,6 +51,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Serve uploaded student photos.
 app.mount(
